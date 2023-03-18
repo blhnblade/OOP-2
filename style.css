@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto';
+}
+
+.wrapper{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(270deg, rgb(157, 255, 165), rgba(163, 255, 110, 0.849), rgb(144, 255, 70));
+}
+
+.calc-body{
+    position: absolute;
+    width: 350px;
+    background-image: linear-gradient(30deg,rgba(122, 122, 122, 0.77), rgba(116, 116, 116, 0.77));
+    box-shadow: 0px 5px 7px rgb(122 122 122 / 69%);
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    row-gap: 40px;
+    padding: 40px 20px 40px;
+    border: 2px solid rgba(67, 66, 66, 0.384);
+}
+
+.group-inputs{
+    justify-self: flex-start;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 45px;
+}
+
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+
+.outer p{
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.outer p span{
+    font-weight: 500;
+}
+
+label{
+    font-size: 18px;
+}
+
+.outer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 5px;
+    text-align: center;
+}
+
+.outer__heading-container{
+
+}
+
+.outer__heading{
+    font-size: 14px;
+    font-weight: 400;
+}
+
+
+
+input[type="number"]{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.795);
+    border-style: none;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 0px 3px 0 0;
+    text-align: center;
+    box-shadow: 0px 5px 3px rgba(82, 82, 82, 0.479);
+}
+
+input:focus{
+    outline: none;
+}
+
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input[type='number'],
+input[type="number"]:hover,
+input[type="number"]:focus {
+    appearance: none;
+    -moz-appearance: textfield;
+}
